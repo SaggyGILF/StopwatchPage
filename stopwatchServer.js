@@ -5,12 +5,12 @@ const express = require('express');
 const app = express();
 const ejs = require('ejs');
 const PORT = 80;
-const hostName = '192.168.1.1';
+const hostname = '0.0.0.0';
 
 
 // Main routes to serve static files
 app.use(express.static('public'));
-app.use('/JS', express.static(__dirname + 'public/CSS'));
+app.use('/CSS', express.static(__dirname + 'public/CSS'));
 app.use('/JS', express.static(__dirname + 'public/JS'));
 
 // Views Config
@@ -23,4 +23,4 @@ app.get('', (req, res) => {
 });
 
 // Listening...
-app.listen(PORT, console.info(`Listening on port ${PORT}...`));
+app.listen(PORT, hostname, console.info(`Listening on port ${PORT}...`));
