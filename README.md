@@ -2,7 +2,7 @@
 Simple Stopwatch Web Application
 
 ## How to Use:
-* Download files from repository
+* Download & unzip files from repository
 * Navigate to 'StopwatchPage-main' directory in CLI
 * When in 'StopwatchPage-main' type 'npm install' to install all dependencies
 * Then type 'npm start' into CLI and press enter
